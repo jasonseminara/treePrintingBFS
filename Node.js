@@ -1,17 +1,19 @@
 class Node {
   constructor(name) {
     this.name = name;
-    this.children = [];
+    this.kids = [];
   }
 
-  addChildren(children) {
-    const childs = children.length ? children : [children];
 
-    this.children = [
-      ...this.children,
-      ...childs,
+  set children(c) {
+    this.kids = [
+      ...this.kids,
+      ...(c.length ? c : [c]),
     ];
-    return this;
+  }
+
+  get children() {
+    return this.kids;
   }
 }
 
