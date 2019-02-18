@@ -1,0 +1,12 @@
+{
+  "name": "treePrintingBFS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jason Seminara <jseminara@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^5.14.0",
+    "jest": "^24.1.0"
+  }
+}
