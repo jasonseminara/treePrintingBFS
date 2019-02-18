@@ -9,7 +9,10 @@
 
 
 function printTreeLevels(root) {
-  for (let Q = [root]; Q.length;) {
+  let Q = [root];
+
+  // loop over while there's a queue
+  while (Q.length) {
     // deQueue, destructure
     const [node, ...rest] = Q;
 
