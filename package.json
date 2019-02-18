@@ -13,5 +13,6 @@
   },
   "scripts": {
     "test": "jest"
-  }
+  },
+  "repository": "git@github.com:jasonseminara/treePrintingBFS.git"
 }
