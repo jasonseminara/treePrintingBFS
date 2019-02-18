@@ -1,6 +1,7 @@
 /* eslint-env jest */
+
 const Node = require('../Node');
-const printTree = require('../');
+const printTreeLevels = require('../');
 
 const buildTree = (len) => {
   const nodes = Array(len + 1).fill(0).map((n, i) => (new Node(i)));
@@ -18,13 +19,15 @@ describe('TreePrinting', () => {
 
   beforeEach(() => {
     tree = buildTree(9);
+    console.log = jest.fn();
   });
 
-  it('__check tree__', () => {
+  it('__check_tree_structure__', () => {
     expect(tree).toMatchSnapshot();
   });
 
   it('should print out a tree in level order', () => {
-
+    expect(printTreeLevels(tree)).toBeUndefined();
+    expect(console.log.mock.calls).toMatchSnapshot();
   });
 });

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TreePrinting __check tree__ 1`] = `
+exports[`TreePrinting __check_tree_structure__ 1`] = `
 Node {
   "kids": Array [
     Node {
@@ -42,4 +42,36 @@ Node {
   ],
   "name": 1,
 }
+`;
+
+exports[`TreePrinting should print out a tree in level order 1`] = `
+Array [
+  Array [
+    1,
+  ],
+  Array [
+    2,
+  ],
+  Array [
+    3,
+  ],
+  Array [
+    4,
+  ],
+  Array [
+    5,
+  ],
+  Array [
+    6,
+  ],
+  Array [
+    7,
+  ],
+  Array [
+    8,
+  ],
+  Array [
+    9,
+  ],
+]
 `;

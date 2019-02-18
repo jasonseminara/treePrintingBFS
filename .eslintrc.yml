@@ -1,5 +1,4 @@
 env:
-  browser: true
   commonjs: true
   es6: true
 extends: airbnb-base
@@ -8,4 +7,5 @@ globals:
   SharedArrayBuffer: readonly
 parserOptions:
   ecmaVersion: 2018
-rules: {}
+rules:
+  no-console: 0
